@@ -15,19 +15,13 @@
 </template>
 
 <script>
-import TeamsItem from './TeamsItem.vue';
+import TeamsItem from '../components/teams/TeamsItem.vue';
 
 export default {
   components: {
     TeamsItem
   },
-  inject: ['teams'],
-  methods: {
-    ConfirmInput() {
-      // somthings happen
-      this.$router.push('/users');
-    }
-  }
+  inject: ['teams']
 };
 </script>
 
